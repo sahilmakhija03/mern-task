@@ -56,7 +56,7 @@ pipeline {
                 set PATH=%SONAR_SCANNER_PATH%;%PATH%
                 where sonar-scanner || echo "SonarQube scanner not found. Please install it."
                 sonar-scanner -Dsonar.projectKey=backend-task ^
-                    -Dsonar.sources=. ^  // Path to your backend code, adjust accordingly
+                    -Dsonar.sources=. ^ 
                     -Dsonar.host.url=http://localhost:9000 ^
                     -Dsonar.token=%SONAR_TOKEN% 2>&1
                 '''
