@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",  // Start the server using node
+    "dev": "nodemon index.js", // For development with automatic reloading
+    "lint": "eslint src --ext .js,.jsx"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +17,9 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "mongoose": "^8.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22", // Add nodemon for development environment
+    "eslint": "^8.29.0"   // Ensure ESLint is added as a dev dependency
   }
 }
